@@ -14,7 +14,7 @@ describe('Login', () => {
     console.log('clicando entrar');
     await page.click(getDataTestIdSelector('entrar'))
     console.log('esperando \'logout\'');
-    await page.waitForSelector(getDataTestIdSelector('logout'))
+    await page.waitForSelector(getDataTestIdSelector('logoutbixado'))
   })
 
   xit('FEITO PRA QUEBRAR', async () => {

@@ -4,7 +4,7 @@ const utils = require('./helpers/utils')
 
 async function runPlaywrightTestOnServerless() {
   try {
-    const testPattern = 'E2E/*.test.js'
+    const testPattern = 'E2E/1??.test.js'
     const { files, numTotalFiles } = utils.getAllTestFilesByTestPattern({
       testPattern
     })
