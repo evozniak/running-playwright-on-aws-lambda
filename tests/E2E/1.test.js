@@ -23,8 +23,8 @@ describe('Login', () => {
   })
 
   xit('successful login', async () => {
-    await page.type(getDataTestIdSelector('email'), 'someuser@gmail.com')
-    await page.type(getDataTestIdSelector('senha'), 'somepass')
+    await page.type(getDataTestIdSelector('email'), 'teste@gmail.com')
+    await page.type(getDataTestIdSelector('senha'), '123')
     await page.click(getDataTestIdSelector('entrar'))
 
     await page.waitForSelector(getDataTestIdSelector('logout'))
