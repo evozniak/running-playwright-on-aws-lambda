@@ -32,7 +32,7 @@ RUN apk add --no-cache \
     freetype=2.10.4-r0 \
     freetype-dev=2.10.4-r0 \
     harfbuzz=2.6.6-r0 \
-    ca-certificates=20191127-r4 \
+    ca-certificates=20211220-r0 \
     ttf-freefont=20120503-r1 \
     && rm -rf /var/cache/apk/*
 
