@@ -7,7 +7,14 @@ describe('Login', () => {
   })
 
   it('shows error message when password is not set', async () => {
-    throw new Error('Esse teste foi bixado. :(')
+    console.log('preenchendo email');
+    await page.type(getDataTestIdSelector('email'), 'fulano@qa.com')
+    console.log('preenchendo senha');
+    await page.type(getDataTestIdSelector('senha'), 'teste')
+    console.log('clicando entrar');
+    await page.click(getDataTestIdSelector('entrar'))
+    console.log('esperando \'logout\'');
+    await page.waitForSelector(getDataTestIdSelector('logout'))
   })
 
   xit('successful login', async () => {
@@ -18,6 +25,6 @@ describe('Login', () => {
     await page.waitForSelector(getDataTestIdSelector('logout'))
 
     const url = await page.url()
-    expect(url).toContain('/admin/home')
+    expect(url).toContain('/testebixado')
   })
 })
